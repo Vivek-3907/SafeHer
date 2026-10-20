@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeHer | Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="brand">SafeHer</div>
+        <div class="nav-links">
+          <a href="./sos">SOS</a>
+          <a href="./grievance">Forum</a>
+          <a href="./empowerment">Empowerment</a>
+          <a href="./awareness">Awareness</a>
+          <a href="./">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container page-shell">
+      <section class="panel">
+        <h1>Safety Dashboard</h1>
+        <div class="cards three-col">
+          <div class="mini-card"><h3>Quick SOS</h3><p>Alert emergency contacts instantly.</p><a href="./sos" class="btn btn-primary small">Open</a></div>
+          <div class="mini-card"><h3>Share Journey</h3><p>Track and monitor travel safety.</p><a href="./sos" class="btn btn-secondary small">Setup</a></div>
+          <div class="mini-card"><h3>Grievance Forum</h3><p>Submit anonymous concerns securely.</p><a href="./grievance" class="btn btn-primary small">Open</a></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Current emergency contacts</h2>
+        <ul id="contactList" class="list-box"></ul>
+      </section>
+    </main>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

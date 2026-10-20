@@ -1,0 +1,23 @@
+{
+  "name": "safeher",
+  "version": "1.0.0",
+  "description": "SafeHer - Women Safety, Empowerment and Awareness Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "safety",
+    "women",
+    "security",
+    "express",
+    "pwa"
+  ],
+  "author": "Vivek Parmar",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

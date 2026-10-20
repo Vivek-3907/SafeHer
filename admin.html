@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeHer | Admin</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="brand">SafeHer</div>
+        <div class="nav-links">
+          <a href="./dashboard">Dashboard</a>
+          <a href="./sos">SOS</a>
+          <a href="./grievance">Forum</a>
+          <a href="./">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container page-shell">
+      <section class="panel">
+        <h1>Admin Control Center</h1>
+        <div id="adminStats" class="cards four-col"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Grievance review</h2>
+        <div id="adminGrievances" class="forum-list"></div>
+      </section>
+    </main>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

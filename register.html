@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeHer | Register</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-shell">
+      <div class="auth-card">
+        <h1>Create Your SafeHer Account</h1>
+        <form id="registerForm">
+          <label>Name
+            <input type="text" id="registerName" required />
+          </label>
+          <label>Email
+            <input type="email" id="registerEmail" required />
+          </label>
+          <label>Password
+            <input type="password" id="registerPassword" required />
+          </label>
+          <label>Guardian Contact
+            <input type="tel" id="guardianPhone" required placeholder="Emergency guardian number" />
+          </label>
+          <label>Language
+            <select id="registerLanguage">
+              <option value="en">English</option>
+              <option value="gu">ગુજરાતી</option>
+              <option value="hi">हिन्दी</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary full-width">Register</button>
+        </form>
+        <div class="auth-links">
+          <a href="./login">Already have an account?</a>
+          <a href="./">Home</a>
+        </div>
+        <p id="registerMessage" class="status-message"></p>
+      </div>
+    </div>
+
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

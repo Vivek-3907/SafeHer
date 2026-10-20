@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeHer | Grievance Forum</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="brand">SafeHer</div>
+        <div class="nav-links">
+          <a href="./dashboard">Dashboard</a>
+          <a href="./sos">SOS</a>
+          <a href="./empowerment">Empowerment</a>
+          <a href="./awareness">Awareness</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container page-shell">
+      <section class="panel">
+        <h1>Anonymous Grievance Forum</h1>
+        <form id="grievanceForm" class="stacked-form">
+          <label>Title
+            <input type="text" id="grievanceTitle" required />
+          </label>
+          <label>Description
+            <textarea id="grievanceDescription" rows="5" required></textarea>
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" id="grievanceAnonymous" checked />
+            Submit anonymously
+          </label>
+          <button type="submit" class="btn btn-primary">Post grievance</button>
+        </form>
+        <p id="grievanceMessage" class="status-message"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Community guidance</h2>
+        <div id="grievanceList" class="forum-list"></div>
+      </section>
+    </main>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/community.js"></script>
+  </body>
+</html>
